@@ -12,7 +12,7 @@ from mkvtomp4 import MkvtoMp4
 from post_processor import PostProcessor
 from logging.config import fileConfig
 
-logpath = '/var/log/sickbeard_mp4_automator'
+logpath = 'logs/'
 if os.name == 'nt':
     logpath = os.path.dirname(sys.argv[0])
 elif not os.path.isdir(logpath):
