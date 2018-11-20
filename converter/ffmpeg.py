@@ -346,9 +346,11 @@ class FFMpeg(object):
                     return fpath
             return None
 
-        ffmpeg_path = 'ffmpeg'
+        if ffmpeg_path is None:
+            ffmpeg_path = 'ffmpeg'
 
-        ffprobe_path = 'ffprobe'
+        if ffprobe_path is None:
+            ffprobe_path = 'ffprobe'
 
         if '/' not in ffmpeg_path:
             ffmpeg_path = which(ffmpeg_path) or ffmpeg_path
