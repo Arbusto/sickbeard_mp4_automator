@@ -12,8 +12,8 @@ from babelfish import Language
 
 class MkvtoMp4:
     def __init__(self, settings=None,
-                 FFMPEG_PATH="FFMPEG.exe",
-                 FFPROBE_PATH="FFPROBE.exe",
+                 FFMPEG_PATH="ffmpeg",
+                 FFPROBE_PATH="ffprobe",
                  delete=True,
                  output_extension='mp4',
                  output_dir=None,
